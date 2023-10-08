@@ -1,0 +1,33 @@
+Why to learn React?
+--> Job, trend, UI, hype
+--> make easy to manage and build complex frontend
+
+When should I learn React?
+-->After mastering JS
+-->most project don't need react in initial phase
+
+
+Dont't learn react if you do not know javascript or How DOM works?
+React is a library not a framework.
+React is used to build SPA(Single Page Application) and Mobile apps
+
+
+Topics to learn in React
+--> core of react(state or UI manipulation, JSX)
+--> component reusability
+--> Reusing of components(props)
+--> How to propagate change(hooks)
+
+Adittional addon to react
+--> Router (React don't have router)
+--> state managment
+       --> Redux, Redux toolkit, zustand, context API
+--> Class based component
+       --> Legacy code
+BAAS(Backend as a service) APPS
+--> Using AppWrite, Firebase, Superbase
+
+
+
+What exactly is React.JS?
+--> React is a javascript library that is used to build user interfaces, particularly a Single Page Application. It was developed by jordan walke, a software engineer at facebook and is often used for building web application that are scalable, fast and maintainable. React allows developers to create reusable UI component, which can help building and maintaining the user interface easier and more efficient. Instead of having rewrite the same code every time you want to create a similar element on a webpage, you can simply use a REact component you've already built.
