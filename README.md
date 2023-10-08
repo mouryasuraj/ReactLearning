@@ -2,7 +2,7 @@
 npx(node package executer)
 npm(node package manager)
 
-// npx create-react-app 01Basic         //This is not the optimized way to create react app because it takes time there is n
+// npx create-react-app 01Basic         //This is not the optimized way to create react app because it takes time there is another fast way that is npm create vite@latest
 
 npm install -g npm@latest       //If npm is not working then install the latest version of npm
 
