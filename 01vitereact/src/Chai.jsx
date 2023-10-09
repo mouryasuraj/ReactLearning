@@ -1,9 +1,7 @@
-function Chai(){
+export default function Profile(){
     return(
         <>
-            <h1>Helloe React in vite</h1>
+            <img src="https://i.imgur.com/MK3eW3As.jpg" alt="" />
         </>
     )
 }
-
-export default Chai

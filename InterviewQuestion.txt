@@ -1,0 +1,89 @@
+What is ReactJS?
+
+What is  evaluated expression in ReactJS?
+--> In react we can write variables in JSX using curly braces{ } and these curly braces are called  evaluated expression beacuse we cannot write javascript in this curly braces instead we can write only variable. We cannot write considtion in curly braces because when react compile JSX then these are will be put in object and in object we cannot write if else.
+--eg: function MYAPP(){
+    const username = 'suraj'
+    return(
+        <h1>Hello {username}</h1>
+    )
+}
+
+React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app. 
+
+
+What is a component?
+--> Traditionally when creating web pages, web developers marked up their content and then added interaction by sprinkling on some JavaScript. This worked great when interaction was a nice-to-have on the web. Now it is expected for many sites and all apps. React puts interactivity first while still using the same technology: a React component is a JavaScript function that you can sprinkle with markup.
+
+--Pitfall--
+React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!
+
+Return statements can be written all on one line, as in this component:
+Eg: return 'helloe'
+But if your markup isn’t all on the same line as the return keyword, you must wrap it in a pair of parentheses:
+Eg: return (
+    <div>
+        <img src="" />
+    </div>
+)
+--pitfall--
+Without parentheses, any code on the lines after return will be ignored!
+
+
+
+What browser sees?
+--->
+<section> is lowercase, so React knows we refer to an HTML tag.
+<Profile /> starts with a capital P, so React knows that we want to use our component called Profile.
+
+export default function Profile(){
+    return(
+        <img src="https://i.imgur.com/MK3eW3As.jpg" />
+    )
+}
+
+Eg: return (
+    <section>
+        <h1>Amazing scientists</h1>
+        <Profile />
+    </section>
+)
+
+What browser see of above code
+
+return(
+    <section>
+        <h1>Amazing scientists</h1>
+        <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+    </section>
+)
+
+--pitfall--
+
+Components can render other components, but you must never nest their definitions:
+eg: function App(){
+    function Profile(){
+        .......//Do not define a component into another component
+    }
+}
+The snippet above is very slow and causes bugs. Instead, define every component at the top level:
+
+function Profile(){
+    ...//....
+}
+
+function App(){
+    return(
+        <Profile />
+    )
+}
+
+Importants points on ComponentsReact lets you create components, reusable UI elements for your app.
+
+1.In a React app, every piece of UI is a component.
+2.React components are regular JavaScript functions except:
+    a.Their names always begin with a capital letter.
+    b.They return JSX markup.
+
+
+
