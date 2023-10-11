@@ -87,3 +87,11 @@ Importants points on ComponentsReact lets you create components, reusable UI ele
 
 
 
+Why we need hooks?
+--> Hooks allow function component to have access to state and other react features. Beacuse of this class component no longer needed. Although react hooks replace class based component
+About hooks from Officical documentation: https://react.dev/reference/react
+
+About Use State: https://react.dev/reference/react/useState
+
+Interview Questions on React Hooks: https://testbook.com/interview/react-hooks-interview-questions#:~:text=Answer%202%3A%20Some%20benefits%20of,which%20simplifies%20the%20component's%20structure.
+
