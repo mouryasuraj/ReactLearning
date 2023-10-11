@@ -24,7 +24,7 @@ In vite react script is already added to html file and in vite the index.html is
 <!-- Name convention in react -->
 Whenever we create component in react always start first letter as capital.
 
-
+    
 
 
 

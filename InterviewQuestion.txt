@@ -59,8 +59,8 @@ return(
 )
 
 --pitfall--
-
 Components can render other components, but you must never nest their definitions:
+
 eg: function App(){
     function Profile(){
         .......//Do not define a component into another component

@@ -15,7 +15,7 @@ function MyApp(){
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
 //     <MyApp />        {/*This is valid syntax and its running*/}
-//     {/* As we know MyApp is a function and we can wrtie function like this but in StrictMode it will not work. So for best practice we have to write the ablove systax*/}
+//     {/* As we know MyApp is a function and we can wrtie function like this but in StrictMode it will not work. So for best practice we have to write the above systax*/}
 //     {/* MyApp() */}
 //   </React.StrictMode>,
 // )
