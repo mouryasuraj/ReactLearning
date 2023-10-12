@@ -1,7 +1,7 @@
 What is ReactJS?
 
 What is  evaluated expression in ReactJS?
---> In react we can write variables in JSX using curly braces{ } and these curly braces are called  evaluated expression beacuse we cannot write javascript in this curly braces instead we can write only variable. We cannot write considtion in curly braces because when react compile JSX then these are will be put in object and in object we cannot write if else.
+--> In react we can write variables in JSX using curly braces{ } and these curly braces are called  evaluated expression beacuse we cannot write javascript in this curly braces instead we can write only variable. We cannot write condition in curly braces because when react compile JSX then these are will be put in object and in object we cannot write if else.
 --eg: function MYAPP(){
     const username = 'suraj'
     return(
@@ -95,3 +95,31 @@ About Use State: https://react.dev/reference/react/useState
 
 Interview Questions on React Hooks: https://testbook.com/interview/react-hooks-interview-questions#:~:text=Answer%202%3A%20Some%20benefits%20of,which%20simplifies%20the%20component's%20structure.
 
+
+
+Virtual DOM , Fibre, Reconciliation
+
+Virtual DOm: https://legacy.reactjs.org/docs/faq-internals.html
+
+Article on Fibre: https://github.com/acdlite/react-fiber-architecture
+
+
+
+Interview questions on Counter
+
+function Couner(){
+    const [counter, setCounter] = useState(15);
+
+    function increaseValue(){
+        setCounter(preCounter => preCounter + 1);
+        setCounter(preCounter => preCounter + 1);
+        setCounter(preCounter => preCounter + 1);
+        setCounter(preCounter => preCounter + 1);       //19
+    }
+    return(
+        <>
+            <h1>{Counter}</h1>
+            <button onClick={increaseValue}>Increase</button>
+        </h1>
+    )
+}
