@@ -1,7 +1,7 @@
 What is ReactJS?
 
 What is  evaluated expression in ReactJS?
---> In react we can write variables in JSX using curly braces{ } and these curly braces are called  evaluated expression beacuse we cannot write javascript in this curly braces instead we can write only variable. We cannot write condition in curly braces because when react compile JSX then these are will be put in object and in object we cannot write if else.
+--> In react we can write variables in JSX using curly braces{ } and these curly braces are called  evaluated expression beacuse we cannot write javascript in this curly braces instead we can write only variable. We cannot write condition in curly braces because when react compile JSX then these are will be put in object and in object we cannot write if else, we can use ternary operator instead.
 --eg: function MYAPP(){
     const username = 'suraj'
     return(
@@ -123,3 +123,67 @@ function Couner(){
         </h1>
     )
 }
+
+
+Default vs named exports
+Default export : 
+    1.A default export is used to export a single value or module from a file.
+    2.You can only have one default export per module.
+    3.When importing a default export, you can choose any name for the imported value.
+    4.To export a default value in a JavaScript or React module, you typically use the export default syntax.
+Eg: export
+            const MyComponent = () => {
+            // Component code here
+            };
+
+            export default MyComponent;
+Eg: importe
+            import SomeName from './MyComponent';
+
+
+Named export: 
+    1.Named exports allow you to export multiple values or modules from a file.
+    2.You can have multiple named exports in a single module.
+    3.When importing a named export, you need to use the exact name of the exported variable or function.
+    4.To export named values in a JavaScript or React module, you use the export keyword with the variable or function name.
+Eg: export
+            export const add = (a, b) => a + b;
+            export const subtract = (a, b) => a - b;
+Eg:import 
+            import { add, subtract } from './utils';
+
+
+
+The Rules of JSX 
+
+1.Return a single root element
+    To return multiple elements from a component, wrap them with a single parent tag.
+    eg: <>
+            <h2></h2>
+        </>
+        This empty tag is called a Fragment. Fragments let you group things without leaving any trace in the browser HTML tree.
+
+    Why do multiple JSX tags need to be wrapped? 
+    ---> 
+        JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+
+2. Close all the tags 
+3. camelCase all most of the things! 
+        JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
+
+
+
+Specifying a default value for a prop 
+        If you want to give a prop a default value to fall back on when no value is specified, you can do it with the destructuring by putting = and the default value right after the parameter:
+
+        function Avatar({ person, size = 100 }) {
+        // ...
+        }
+        Now, if <Avatar person={...} /> is rendered with no size prop, the size will be set to 100.
+
+        The default value is only used if the size prop is missing or if you pass size={undefined}. But if you pass size={null} or size={0}, the default value will not be used.
+
+
+IMportant point
+
+When you nest content inside a JSX tag, the parent component will receive that content in a prop called children. For example, the Card component below will receive a children prop set to <Avatar /> and render it in a wrapper div:
