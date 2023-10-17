@@ -4,9 +4,9 @@ function InputBox({
     label='from',
     amount,
     onAmountChange,
-    selectCurrency='usd',
+    selectCurrency,
     onCurrencyChange,
-    currencyOptions = ['usd', 'inr', 'jpn'],
+    currencyOptions = [],
     currencyDisable=false,
     amountDisable=false,
     className=''
